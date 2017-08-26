@@ -12,8 +12,5 @@ def main():
 
         except FileNotFoundError:
             print("arquivo não encontrado")
-
-        finally:
-            print("Testando finally")
 if __name__ == '__main__':
     main()
