@@ -14,11 +14,12 @@ def menu():
   2- Incluir contato
   3- Apagar contato
   4-Visualisar lista de contatos
-  5- Sair""")
-  return regulariza("Escolha uma opção: ", 1, 5)
+  5- Buscar contato
+  6- Sair""")
+  return regulariza("Escolha uma opção: ", 1, 6)
 while True:
     op = menu()
-    if op == 5
+    if op == 6
         break
 
 
