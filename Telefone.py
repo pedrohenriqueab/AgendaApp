@@ -1,9 +1,10 @@
 import datetime
 class Telefone(object):
-    def __init__(self, numero, ddd, codigoPais):
-        self.numero = numero
-        self.ddd = ddd
+    def __init__(self,codigoPais, ddd, numero):
         self.codigoPais = codigoPais
+        self.ddd = ddd
+        self.numero = numero
+      
 
 class Contato():
     def __init__(self, criacao):
