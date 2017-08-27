@@ -18,8 +18,8 @@ def menu():
   6- Sair""")
   return regulariza("Escolha uma opção: ", 1, 6)
 while True:
-    opção = menu()
-    if opção == 6
+    op = menu()
+    if op == 6
         break
 
 
