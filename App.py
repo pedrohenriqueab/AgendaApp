@@ -10,16 +10,15 @@ def regulariza (pergunta, inicio, fim):
       print("valor inválido, digite entre %d e %d" % (inicio, fim))
 def menu():
   print("""
-  1- Adicionar contato
-  2- Editar contato
-  3-Pesquisar contato
+  1- Quantidade de contatos
+  2- Incluir contato
+  3- Apagar contato
   4-Visualisar lista de contatos
-  5-Aapagar contato
-  6- Sair""")
-  return regulariza("Escolha uma opção: ", 1, 6)
+  5- Sair""")
+  return regulariza("Escolha uma opção: ", 1, 5)
 while True:
     op = menu()
-    if op == 6
+    if op == 5
         break
 
 
