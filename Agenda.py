@@ -1,12 +1,26 @@
-import json
-import App
-class Agenda():
-    def __init__(self, proprietario):
+#import json
+from Model.Pessoa import *
+from Model.Contato import Contato
+from Model.Telefone import Telefone
+
+class Agenda(Pessoa):
+    def __init__(self, proprietario, nome, nascimento, email):
+        super(self, Pessoa).__init__(nome, nascimento, email)
         self.proprietario = proprietario
+        self.nome = nome
+        self.nascimento = nascimento
+        self.email = email
         self.contatos = []
 
-    def AdicionarNovoContato(self, contatos):
-        self.contatos.append(contatos)
+    def AdicionarNovoContato(self):
+            nome = input("Nome do contato: ")
+            codigoPais = input("Digite o codigo do País: ")
+            ddd = input("ddd: ")
+            numero = input ("digite o número: ")
+            email = input("Email: ")
+            con = Contato()
+            numero = Telefone(codigoPais, ddd, numero)
+            self.contatos[Pessoa] = numero
 
     def ListarDados(self):
         for contatos in self.contatos:
@@ -22,7 +36,7 @@ class Agenda():
 
     def ApagarUmContato(self, nome):
         global agenda
-        p = self.Pesquisar(nome)
+        p = self.PesquisarContato(nome)
         if p != None:
             del agenda[p]
         while True:
@@ -37,4 +51,3 @@ class Agenda():
 
     def SalvarContato(self):
         pass
-
