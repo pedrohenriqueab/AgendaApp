@@ -21,6 +21,12 @@ class Agenda(Pessoa):
             con = Contato()
             numero = Telefone(codigoPais, ddd, numero)
             self.contatos[Pessoa] = numero
+            var Contatos = [
+                {
+                    "nome": nome
+                    "numero": numero
+                    "email": email
+                }, ]
 
     def ListarDados(self):
         for contatos in self.contatos:
