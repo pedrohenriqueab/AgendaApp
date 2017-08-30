@@ -1,4 +1,4 @@
-#import json
+import json
 from Model.Pessoa import *
 from Model.Contato import Contato
 from Model.Telefone import Telefone
@@ -12,7 +12,7 @@ class Agenda(Pessoa):
         self.email = email
         self.contatos = []
 
-    def AdicionarNovoContato(self):
+   def AdicionarNovoContato(self):
             nome = input("Nome do contato: ")
             codigoPais = input("Digite o codigo do País: ")
             ddd = input("ddd: ")
@@ -21,12 +21,10 @@ class Agenda(Pessoa):
             con = Contato()
             numero = Telefone(codigoPais, ddd, numero)
             self.contatos[Pessoa] = numero
-            var Contatos = [
-                {
-                    "nome": nome
-                    "numero": numero
-                    "email": email
-                }, ]
+            var jsoncontato =  {
+                    "Contatos: [""nome": "nome",
+                                "numero": "numero",
+                                "email": "email",]}
 
     def ListarDados(self):
         for contatos in self.contatos:
