@@ -5,7 +5,6 @@ from Model.Telefone import *
 def main():
     cont = Agenda("pedro")
 
-def menu():
     while True:
         print("""                         MENU
             1- Adicionar novo contato
@@ -16,7 +15,7 @@ def menu():
             6- Sair""")
         opcao = int(input("              Escolha uma opção: "))
         if opcao == 6:
-            return menu()
+            break
         elif opcao == 1:
             cont.AdicionarNovoContato()
         elif opcao == 2:
@@ -28,5 +27,7 @@ def menu():
         elif opcao == 5:
             cont.ApagarUmContato:()
 
+                
+                
 if __name__=='__main__':
     main()
