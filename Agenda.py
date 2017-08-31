@@ -4,15 +4,11 @@ from Model.Contato import Contato
 from Model.Telefone import Telefone
 
 
-class Agenda(Pessoa):
-    def __init__(self, proprietario, nome, nascimento, email):
-        super(self, Pessoa).__init__(nome, nascimento, email)
+class Agenda():
+    def __init__(self, proprietario):
         self.proprietario = proprietario
-        self.nome = nome
-        self.nascimento = nascimento
-        self.email = email
         self.contatos = []
-
+        
    def AdicionarNovoContato(self):
             nome = input("Nome do contato: ")
             codigoPais = input("Digite o codigo do País: ")
