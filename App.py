@@ -3,7 +3,7 @@ from Model.Pessoa import Pessoa
 from Model.Contato import Contato
 from Model.Telefone import *
 def main():
-    cont = Agenda("pedro")
+    cont = Agenda()
 
     while True:
         print("""                         MENU
