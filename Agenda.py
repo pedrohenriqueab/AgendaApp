@@ -31,7 +31,7 @@ class Agenda():
 
     def PesquisarContato(self, nome):
         nome = nome.lower()
-        for a, b in enumerate (Agenda):
+        for a, b in enumerate (contatos):
             if b [0].lower() == nome:
                 return (a)
 
