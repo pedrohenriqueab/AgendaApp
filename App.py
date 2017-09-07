@@ -1,10 +1,8 @@
 from Model.Agenda import Agenda
 from Model.Pessoa import Pessoa
 from Model.Contato import Contato
-from Model.Telefone import *
-def main():
-    Agenda = Agenda(Pessoa("pedro, marina"))
-
+from Model.Telefone import Telefone
+def menuAgenda():
     while True:
         print("""                         MENU
             1- Adicionar novo contato
@@ -13,21 +11,26 @@ def main():
             4- Quantidade de Contatos
             5- Apagar um contato           
             6- Sair""")
+
         opcao = int(input("              Escolha uma opção: "))
+
         if opcao == 6:
             break
         elif opcao == 1:
-            cont.AdicionarNovoContato()
+            print("olá")
         elif opcao == 2:
-            cont.PesquisarContato()
+            print("olá")
         elif opcao == 3:
-            cont.ListarDados()
+            print("olá")
         elif opcao == 4:
-            cont.QuantidadeDeContatos()
+            print("olá")
         elif opcao == 5:
-            cont.ApagarUmContato:()
+            print("olá")
+    return opcao
 
-                
-                
-if __name__=='__main__':
+def main():
+    menuAgenda()
+
+
+if __name__ == '__main__':
     main()
