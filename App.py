@@ -15,17 +15,17 @@ def menuAgenda():
         opcao = int(input("              Escolha uma opção: "))
 
         if opcao == 6:
-            break
-        elif opcao == 1:
-            print("olá")
-        elif opcao == 2:
-            print("olá")
-        elif opcao == 3:
-            print("olá")
-        elif opcao == 4:
-            print("olá")
-        elif opcao == 5:
-            print("olá")
+ +            break
+ +      elif opcao == 1:
+ +            cont.AdicionarNovoContato()
+ +      elif opcao == 2:
+ +            cont.PesquisarContato()
+ +      elif opcao == 3:
+ +            cont.ListarDados()
+ +      elif opcao == 4:
+ +            cont.QuantidadeDeContatos()
+ +      elif opcao == 5:
+ +            cont.ApagarUmContato()
     return opcao
 
 def main():
