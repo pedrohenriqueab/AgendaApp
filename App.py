@@ -15,21 +15,34 @@ def menuAgenda():
         opcao = int(input("              Escolha uma opção: "))
 
         if opcao == 6:
- +            break
- +      elif opcao == 1:
- +            cont.AdicionarNovoContato()
- +      elif opcao == 2:
- +            cont.PesquisarContato()
- +      elif opcao == 3:
- +            cont.ListarDados()
- +      elif opcao == 4:
- +            cont.QuantidadeDeContatos()
- +      elif opcao == 5:
- +            cont.ApagarUmContato()
+              break
+       elif opcao == 1:
+              aux1.AdicionarNovoContato()
+       elif opcao == 2:
+              aux1.PesquisarContato()
+       elif opcao == 3:
+              aux1.ListarDados()
+       elif opcao == 4:
+              aux1.QuantidadeDeContatos()
+       elif opcao == 5:
+              aux1.ApagarUmContato()
     return opcao
 
+def criarAgenda():
+    print("""                         MENU
+            1- Criar Agenda          
+            2- Sair""")
+    opcao1 = int(input("              Escolha uma opção: "))
+
+        if opcao1 == 2:
+             break
+      elif opcao1 == 1:
+             aux1 = input(Pessoa(nome, nascimento, email))
+             menuAgenda()
+    return opcao1
+
 def main():
-    menuAgenda()
+    criarAgenda()
 
 
 if __name__ == '__main__':
