@@ -1,8 +1,10 @@
 from Model.Agenda import Agenda
 from Model.Pessoa import Pessoa
 from Model.Contato import Contato
-from Model.Telefone import Telefone
+from Model.Telefone import Telefone #Main do programa
+
 def menuAgenda():
+   #Imprime na tela do usuário o Menu para com as seguintes opções:
     while True:
         print("""                         MENU
             1- Adicionar novo contato
@@ -29,6 +31,7 @@ def menuAgenda():
     return opcao
 
 def criarAgenda():
+   #Apresenta ao usuário a opção de Criar Agenda 
     print("""                         MENU
             1- Criar Agenda          
             2- Sair""")
