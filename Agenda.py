@@ -15,11 +15,8 @@ class Agenda():
             nome = input("Nome do contato: ")
             email = input("Email: ")
             numero = input(Telefone(codigoPais, ddd, numero))
-            self.contatos[Pessoa] = numero
-            var jsoncontato =  {
-                    "Contatos: [""nome": "nome",
-                                "numero": "numero",
-                                "email": "email",]}
+            self.contatos = Contato(nome, email, numero)
+            JsonObjs = json.load(contatos)
 
     def ListarDados(self):
        #Lista os contatos já adicionados 
