@@ -44,7 +44,7 @@ def criarAgenda():
              menuAgenda()
     return opcao1
 
-def main():
+def main(args = []):
     criarAgenda()
 
 
